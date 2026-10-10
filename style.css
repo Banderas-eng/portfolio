@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --color-bg: #ecf0f1;
+  --color-text: #34495e;
+  --color-accent: #3d9fe1;       /* icons, borders, highlights */
+  --color-accent-dark: #1f6fb2;  /* buttons, links */
+  --color-white: #ffffff;        /* card backgrounds */
+
+  /* Fonts */
+  --font-main: 'Poppins', sans-serif;
+
+  /* Reusable sizes */
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
