@@ -10,6 +10,7 @@
   --color-text: #34495e;
   --color-accent: #3d9fe1;       /* icons, borders, highlights */
   --color-accent-dark: #1f6fb2;  /* buttons, links */
+  --color-accent-darker: #185a91;  /* buttons, hover */
   --color-white: #ffffff;        /* card backgrounds */
 
   /* Fonts */
@@ -26,4 +27,51 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h1 { 
+  font-size: 3rem; 
+}
+h2 { 
+  font-size: 2rem; 
+  text-align: center; 
+}
+h3 { 
+  font-size: 1.25rem; 
+}
+
+a {
+  color: var(--color-accent-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  background-color: var(--color-accent-dark);
+  color: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-accent-darker);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
 }
