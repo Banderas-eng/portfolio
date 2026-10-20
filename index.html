@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,18 +18,24 @@
     <header>
         <nav class="navbar">
             <a href="#hero" class="logo">Yande</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <ul class="social-links">
-                <li><a href="#" aria-label="Instagram" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#" aria-label="Discord" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-discord"></i></a></li>
-            </ul>
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Instagram" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" aria-label="Discord" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-discord"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -106,7 +113,8 @@
         </div>
     </footer>
 
-
+    <script src="script.js"></script>
+    
 </body>
 
 </html>
