@@ -119,6 +119,12 @@ section {
   color: var(--color-accent-dark);
 }
 
+.nav-links a.active {
+  color: var(--color-accent-dark);
+  border-bottom: 2px solid var(--color-accent-dark);
+  padding-bottom: 2px;
+}
+
 .menu-toggle {
   display: none;
   background: none;
